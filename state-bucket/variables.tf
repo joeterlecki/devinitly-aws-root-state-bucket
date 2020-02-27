@@ -61,7 +61,6 @@ locals {
     {
       Name        = var.bucket_name
       Environment = var.environment
-      Project     = "portfolio"
     },
   )
 }
