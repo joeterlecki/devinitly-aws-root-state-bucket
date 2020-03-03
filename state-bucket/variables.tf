@@ -32,7 +32,7 @@ variable "bucket_name_prefix" {
   default     = null
 }
 
-variable "logging_configuration" {
+variable "logging" {
   description = "Access bucket logging configuration"
   type        = map(string)
   default     = {}
