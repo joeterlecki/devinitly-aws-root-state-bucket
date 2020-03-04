@@ -7,6 +7,7 @@ variable "bucket_name" {
 variable "region" {
   description = "Desired region for bucket"
   type        = string
+  default     = null
 }
 
 variable "canned_acl" {
@@ -18,6 +19,7 @@ variable "canned_acl" {
 variable "versioning_status" {
   description = "Desired status for object versioning: True or False"
   type        = bool
+  default     = false
 }
 
 variable "attach_bucket_policy" {
@@ -51,8 +53,9 @@ variable "environment" {
 }
 
 variable "tags" {
-  type    = map(string)
-  default = {}
+  description = "Desired tags for the bucket"
+  type        = map(string)
+  default     = {}
 }
 
 locals {
