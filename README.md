@@ -1,22 +1,22 @@
-#devinitly-aws-root-state-bucket
+# devinitly-aws-root-state-bucket
 This repo holds the terraform state bucket for the root aws account of the organization. In addtion the terraform.tfstate file can found along side the configuration files. AN explanation can be found below
 
-##Motivation
+## Motivation
 - To demonstrate how to setup the first state bucket within your first aws account.
 - Outline the chicken and egg scenario for tfstate files and root accounts. 
  
-##Technologies
+## Technologies
 - Terraform 0.12
 - git-crypt
 - aws
 - s3
 
-##Requirements
+## Requirements
 - AWS acccount
 - AWS Profile and credentials configured
 - Terraform and git-crypt installed
 
-##Usage
+## Usage
 When creating the very first aws account and state bucket for terraform infrastructure you will encounter a *chicken and egg scenario* when attempting to keep everything in Infrastructure as code(IAC).
 
 The best practice for terraform is to use a remote state to store the terraform state files in s3; however, this promotes a challange you need a state bucket to store the state bucket configuration.
