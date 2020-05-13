@@ -1,2 +1,2 @@
-state-bucket/.terraform/
-
+.terraform/
+terraform.tfstate.backup
