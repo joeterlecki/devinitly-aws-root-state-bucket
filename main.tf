@@ -3,7 +3,7 @@ module "devinitly-root-terraform-state" {
   bucket_name       = var.bucket_name
   region            = var.region
   versioning_status = var.versioning_status
-//  logging           = var.logging
+  logging           = var.logging
   environment       = var.environment
   tags              = var.tags
 }
