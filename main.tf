@@ -1,9 +1,8 @@
 module "devinitly-root-terraform-state" {
-  source            = "git::https://gitlab.com/devinitly/terraform/modules/terraform-aws-s3-bucket.git?ref=v1.4.4"
+  source            = "github.com/joeterlecki/terraform-aws-s3-bucket.git?ref=v1.4.5"
   bucket_name       = var.bucket_name
-  region            = var.region
   versioning_status = var.versioning_status
-  logging           = var.logging
+  #logging           = var.logging
   environment       = var.environment
   tags              = var.tags
 }

@@ -4,12 +4,6 @@ variable "bucket_name" {
   default     = null
 }
 
-variable "region" {
-  description = "Desired region for bucket"
-  type        = string
-  default     = null
-}
-
 variable "canned_acl" {
   description = "Desired AWS canned ACL with prefined grants"
   type        = string
