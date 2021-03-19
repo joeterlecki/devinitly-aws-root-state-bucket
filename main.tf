@@ -7,4 +7,5 @@ module "devinitly-root-terraform-state" {
   logging           = var.logging
   environment       = var.environment
   tags              = var.tags
+  canned_acl               = var.canned_acl
 }
